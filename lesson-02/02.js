@@ -12,7 +12,7 @@ let dice2 = Math.ceil(Math.random() * 6);
 let isWinningDouble = false
 
 
-if(dice1 === dice2) {
+if(dice1 === dice2 && dice1 > 3 ) {
         isWinningDouble
 } else {
         isWinningDouble = false

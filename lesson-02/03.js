@@ -18,5 +18,4 @@ grade = 'C'
 grade = 'B'
 } else if(score >= 90 && score <= 100) {
 grade = 'A'
-};
-alert(grade)
+}

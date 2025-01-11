@@ -28,9 +28,6 @@ if(dice1 === dice2 && dice1 > 3) {
         isWinningDouble = false
 }
 
-
-// document.write('dice1:' + dice1  + '   ' + 'dice2:' + dice2 + '   ' + 'isWinningDouble:' + isWinningDouble)
-
 /*
 console.log('Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice2)

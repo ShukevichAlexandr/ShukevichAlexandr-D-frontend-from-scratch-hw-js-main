@@ -12,8 +12,8 @@ let dice2 = Math.ceil(Math.random() * 6);
 let isWinningDouble = false
 
 
-if(dice1 === dice2 && dice1 > 3 ) {
-        isWinningDouble
+if(dice1 === dice2 && dice1 > 3 && dice2 > 3) {
+        isWinningDouble = true
 } else {
         isWinningDouble = false
 }

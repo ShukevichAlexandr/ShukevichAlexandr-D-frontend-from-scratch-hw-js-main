@@ -3,7 +3,7 @@
 
 
 function calculateAverage(a, b) {
-    if(typeof a !== 'number' || typeof a !== 'number'){
+    if(typeof a !== 'number' || typeof b !== 'number'){
         throw new Error('Введено не число');
     }
     return (a + b) / 2;

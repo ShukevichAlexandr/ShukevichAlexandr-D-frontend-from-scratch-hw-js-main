@@ -2,8 +2,8 @@
 
 
 
-function calculateAverage(x, y) {
-    return (x + y) / 2;
+function calculateAverage(a, b) {
+    return (a + b) / 2;
 }
 
 // const result = calculateAverage(2,4);

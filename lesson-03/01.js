@@ -9,5 +9,3 @@ function calculateAverage(a, b) {
     return (a + b) / 2;
 }
 
-// const result = calculateAverage(2,4);
-// alert(result);

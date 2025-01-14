@@ -11,5 +11,3 @@ for (let i = 0; i < numbers.length; i++) {
     return largest;
 }
 
-// const result = findLargest(1, 3, 5, 7, 9, 11);
-// alert(result)

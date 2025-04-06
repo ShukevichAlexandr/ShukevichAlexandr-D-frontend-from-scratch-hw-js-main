@@ -17,3 +17,46 @@ const WEB_TECH_IMAGES = [
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/c8a1f4a6-1337-4899-bdfd-a8c9c7bb806a_css-magic-logo.jpg',
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/784380b9-6937-42a6-bdfe-869835820234_html-magic-logo.jpg',
 ]
+
+
+
+
+
+// Индекс текущего изображения
+let currentIndex = 0;
+
+// Функция для показа предыдущего изображения
+function showPrevImage() {
+    if (currentIndex === 0) {
+        // Переход к последнему изображению, если достигли начала
+        currentIndex = WEB_TECH_IMAGES.length - 1;
+    } else {
+        // Уменьшение индекса для перехода к предыдущему изображению
+        currentIndex--;
+    }
+    updateImage();
+}
+
+// Функция для показа следующего изображения
+function showNextImage() {
+    if (currentIndex === WEB_TECH_IMAGES.length - 1) {
+        // Переход к первому изображению, если достигли конца
+        currentIndex = 0;
+    } else {
+        // Увеличение индекса для перехода к следующему изображению
+        currentIndex++;
+    }
+    updateImage();
+}
+
+// Функция обновления изображения в теге img
+function updateImage() {
+    document.getElementById('web-tech-image').src = WEB_TECH_IMAGES[currentIndex];
+}
+
+// Присоединяем обработчики событий к кнопкам
+document.getElementById('prev-button').addEventListener('click', showPrevImage);
+document.getElementById('next-button').addEventListener('click', showNextImage);
+
+// Изначально загружаем первое изображение
+updateImage();

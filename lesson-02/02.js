@@ -30,3 +30,4 @@ if(dice1 > 3 && dice2 > 3) {
 // } else {
 // console.log('Не выигрышный дубль.')
 // }
+  Math.floor

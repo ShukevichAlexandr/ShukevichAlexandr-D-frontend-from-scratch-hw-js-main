@@ -4,9 +4,11 @@
  */
 
 function isNumeric(str) {
-let arr = str.split('')
-let result = arr.filter(item => item !== '-').join('');
-return /^\d+$/.test(result);
+  let arr = str.split('')
+  let result = arr.filter(item => item !== '-').join('');
+  let arr2 = result.split('')
+  resultEnd = arr2.filter(item => item !== '.').join('');
+  return /^\d+$/.test(resultEnd);
 }
 
 // console.log(isNumeric("123")) // Ожидаемый результат: true

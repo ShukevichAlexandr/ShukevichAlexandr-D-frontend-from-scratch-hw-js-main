@@ -15,6 +15,8 @@ function truncate(str, maxLength) {
     for (let i = 0; i < maxLength; i++) {
         result.push(array[i])
     }
-    result.push('...')
+    if (array.length > maxLength) {
+        result.push('...')
+    }
     return result.join('')
 }

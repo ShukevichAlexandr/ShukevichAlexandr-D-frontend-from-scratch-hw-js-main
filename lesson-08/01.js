@@ -68,7 +68,9 @@ clearCartButton.addEventListener('click', function () {
 })
 
 petShop.addEventListener('click', function(event){
+  // Это объект, представляющий собой тот элемент DOM, на котором произошло событие (например, нажатие мыши)
   // Проверяем, является ли цель события кнопкой питомца
+  // Используем matches() для проверки, была ли нажата кнопка с классом .pet
   if (!event.target.matches('.pet')) return;
   
   // Получаем ID питомца из атрибута id элемента

@@ -53,9 +53,14 @@ cancelButton.addEventListener('click', () => {
   if(!isTimerStarted) { 
     return;
   } else {
-    clearInterval(timerId);
+    clearInterval(timerId); // Очищаем интервал
+    isTimerStarted = false; // Таймер больше не активен
     countdownDisplay.textContent = 'Отменено'
-    isTimerStarted = false
+    
   }
-  
 })
+
+function stopCountdown() {
+  clearInterval(timerId); // Очищаем интервал
+  isTimerStarted = false; // Таймер больше не активен
+}

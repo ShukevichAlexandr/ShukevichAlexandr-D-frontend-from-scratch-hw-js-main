@@ -35,21 +35,20 @@ let timerId
 startButton.addEventListener('click', () => {
   let counter = 4
 
-  
-  timerId = setInterval(() => {
-    if (isTimerStarted === true) {
-      return;
-    } else {
-    counter--
-    if (counter > 0){
-      countdownDisplay.textContent = counter.toString();
-    } else {
-      countdownDisplay.textContent = '🚀';
-      clearInterval(timerId);
-    }}
-  }, 1000);
-  isTimerStarted = true;
-
+  if (isTimerStarted === true){
+    return;
+  } else {
+    timerId = setInterval(() => {
+      counter--
+      if (counter > 0){
+        countdownDisplay.textContent = counter.toString();
+      } else {
+        countdownDisplay.textContent = '🚀';
+        clearInterval(timerId);
+      }
+    }, 1000);
+    isTimerStarted = true;
+  }
 })
 
 cancelButton.addEventListener('click', () => {
